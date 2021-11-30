@@ -1,0 +1,471 @@
+*{
+	margin: 0;
+	padding: 0;
+	transition: .7s;
+	list-style: none;
+}
+.looganim{
+	position: fixed;
+	height: 80px;
+	width: 250px;
+	margin-top: 400px;
+	display: flex;
+	z-index: 999999;
+	margin-left: 870px;
+}
+.loogyuan{
+	position: relative;
+	height: 40px;
+	width: 40px;
+	background-color: gold;
+	border-radius: 1000px;
+	animation: jo1 1s infinite;
+}
+@keyframes jo1{
+	0%{opacity: 0;transform: translateY(80px);}
+	50%{transform: translateY(-80px);}
+	100%{opacity: 1;transform: translateY(80px);}
+}
+.loogyuan1{
+	position: relative;
+	height: 40px;
+	width: 40px;
+	background-color: gold;
+	border-radius: 1000px;
+	margin-left: 30px;
+	animation: jo2 1s .5s infinite;
+}
+@keyframes jo2{
+	0%{opacity: 0;transform: translateY(80px);}
+	50%{transform: translateY(-80px);}
+	100%{opacity: 1;transform: translateY(80px);}
+}
+.loogyuan2{
+	position: relative;
+	height: 40px;
+	width: 40px;
+	background-color: gold;
+	border-radius: 1000px;
+	margin-left: 30px;
+	animation: jo3 1s 2s infinite;
+}
+@keyframes jo3{
+	0%{opacity: 0;transform: translateY(80px);}
+	50%{transform: translateY(-80px);}
+	100%{opacity: 1;transform: translateY(80px);}
+}
+.loogmask{
+	position: absolute;
+	top: 0;
+	background-color: black;
+	width: 1920px;
+	height: 8080px;
+	z-index: 999998;
+}
+/* 加载动画 */
+.navi{
+	height: 100px;
+	width: 100%;
+	background-color: black;
+	display: flex;
+}
+.navimask{
+	height: 90px;
+	width: 1920px;
+	position: absolute;
+	top: 0;
+	z-index: 100000;
+}
+.addnavi{
+	position: fixed;
+}
+.logo{
+	height: 100px;
+}
+.naviul{
+	position: absolute;
+	width: 1300px;
+	height: 150px;
+	display: flex;
+	right: 0;
+}
+.navili{
+	height: 100px;
+	width: 330px;
+	text-align: center;
+	font-size: 40px;
+	line-height: 100px;
+	font-family: "courier new";
+	cursor: pointer;
+	color: white;
+}
+.navili:hover{
+	background-color: yellow;
+	color: black;
+}
+.home{
+	width: 100%;
+	height: 900px;
+	background:url(../img/h1_hero.jpg) no-repeat;
+	border: 1px solid transparent;
+	border-bottom: 30px yellow solid;
+	perspective: 3000px;
+	transform-style: preserve-3d;
+	background-color: black;
+	filter: brightness(.6);
+}
+.home:hover{
+	filter: brightness(1)sepia(.6);
+}
+.hometext{
+	position: relative;
+	height: 160px;
+	width: 800px;
+	background-color: yellow;
+	margin: 0 auto;
+	margin-top: 130px;
+	font-weight: 900;
+	font-size: 60px;
+	font-family: "palace script mt";
+	text-align: center;
+	cursor: pointer;
+	transition: .7s;
+	line-height: 150px;
+}
+.choose{
+	width: 100%;
+	height: 1200px;
+	background-color: black;
+}
+.choose-w{
+	width: 1500px;
+	height: 1190px;
+	margin: 0 auto;
+	background:linear-gradient(to top,black,#151225);
+	border: solid transparent;
+}
+.choosetext{
+	height: 180px;
+	text-align: center;
+	font-size: 180px;
+	font-family: "palace script mt";
+	color: yellow;
+	margin-top: 30px;
+}
+.chooseimge{
+	width: 1500px;
+	height: 985px;
+}
+.chul{
+	width: 1500px;
+	height: 620px;
+	display: flex;
+}
+.chli{
+	height: 620px;
+	width: 377px;
+	background: url(../img/jo2.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.chli1{
+	height: 620px;
+	width: 377px;
+	background: url(../img/jo.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.chli2{
+	height: 620px;
+	width: 377px;
+	background: url(../img/jo3.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.box{
+	height: 620px;
+	width: 377px;
+	margin-top: 100px;
+	position: relative;
+	overflow: hidden;
+}
+.box:hover .chli{
+	cursor: pointer;
+	transform: scale(1.3,1.3);
+}
+.box1{
+	height: 620px;
+	width: 377px;
+	position: relative;
+	margin-left: 200px;
+	background-color: red;
+	overflow: hidden;
+}
+.box1:hover .chli1{
+	cursor: pointer;
+	transform: scale(1.3,1.3);
+}
+.box2{
+	margin-left: 180px;
+	height: 620px;
+	width: 377px;
+	margin-top: 100px;
+	position: relative;
+	overflow: hidden;
+}
+.box2:hover .chli2{
+	cursor: pointer;
+	transform: scale(1.3,1.3);
+}
+.boxtext{
+	text-shadow: 0 0 2px yellow;
+	font-size: 60px;
+	color: blue;
+	position: absolute;f
+	font-size: 50px;
+	font-family: "felix titling";
+	margin-top: 100px;
+	opacity: 0;
+}
+.boxtext1{
+	text-shadow: 0 0 2px yellow;
+	font-size: 30px;
+	color: green;
+	position: absolute;
+	font-size: 50px;
+	font-family: "felix titling";
+	margin-left: 600px;
+	margin-top: 500px;
+	opacity: 0;
+}
+.boxtext2{
+	text-shadow: 0 0 2px yellow;
+	font-size: 30px;
+	color: pink;
+	position: absolute;
+	font-size: 50px;
+	font-family: "felix titling";
+	margin-left: 1200px;
+	margin-top: 100px;
+	opacity: 0;
+}
+.jiaohu{
+	width: 100%;
+	height: 300px;
+	background: url(../img/contact_hero.jpg) no-repeat fixed;
+	background-size: 100% 100%;
+	filter: grayscale(20%);
+	overflow-y: hidden;
+	perspective: 300px;
+}
+.jiaotext{
+	height: 200px;
+	width: 1200px;
+	margin: 0 auto;
+	color: yellow;
+	font-size: 80px;
+	font-family: "times new roman";
+	line-height: 150px;
+}
+.btn{
+	height: 89px;
+	width: 780px;
+	margin-left: 600px;
+	background-color: yellow;
+	border: 0;
+	border-radius: 10px;
+	font-size: 50px;
+	font-family: "copperplate gothic bold";
+	cursor: pointer;
+	margin-top: -90px;
+}
+.jiaomask{
+	background-color: black;
+	height:3500px;
+	width: 1920px;
+	position: absolute;
+	top: 0;
+	opacity: .7;
+	display: none;
+}
+.jiaomasktext{
+	height: 180px;
+	width: 400px;
+	position: absolute;
+}
+.masktnt{
+	height: 600px;
+	width: 400px;
+	position: fixed;
+	top: 230px;
+	left:740px;
+	background: url(../img/offers3.jpg)no-repeat;
+	background-size: 100% 100%;
+	display: none;
+	perspective: 800px;
+	transform-style: preserve-3d;
+}
+.c{
+	display: flex;
+	margin-top: 20px;
+	cursor: pointer;
+	height: 80px;
+	width: 70px;
+}
+.cha{
+	width: 70px;
+	height: 10px;
+	background-color: silver;
+	border-radius: 10px;
+	transform: rotate(45deg);
+	position: absolute;
+}
+.cha1{
+	width: 70px;
+	height: 10px;
+	background-color: silver;
+	border-radius: 10px;
+	transform: rotate(-45deg);
+	position: absolute;
+}
+.mtext{
+	width: 1270px;
+	position: absolute;
+	font-size: 70px;
+	color: #011532;
+	line-height: 400px;
+	margin-left: -290px;
+	font-family: "eras medium itc";
+	text-shadow: 10px -5px 2px white;
+}
+.lunhuanimg{
+	width: 100%;
+	height: 700px;
+	background-color: black;
+	position: absolute;
+	z-index: -23;
+	border-bottom: 20px solid yellow;
+}
+.lun-w{
+	position: relative;
+	height: 680px;
+	width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.lunul{
+	position: relative;
+	display: flex;
+	width: 1500px;
+	cursor: pointer;
+}
+.lunli{
+	height: 680px;
+	width: 520px;
+}
+.lunli img{
+	height: 680px;
+	width: 500px;
+}
+.lunleft{
+	height: 70px;
+	width: 40px;
+	background-color: gray;
+	position: absolute;
+	top: 180px;
+	left: 480px;
+	cursor: pointer;
+	border-radius: 1000px;
+	opacity: 0;
+}
+.lunright{
+	height: 70px;
+	width: 40px;
+	background-color: gray;
+	position: absolute;
+	top: 180px;
+	right: 480px;
+	cursor: pointer;
+	border-radius: 1000px;
+	opacity: 0;
+}
+.luntext{
+	position: absolute;
+	height: 80px;
+	width: 1200px;
+	margin-left: 350px;
+	text-align: center;
+	line-height: 70px;
+	font-size: 90px;
+	font-family: "goudy old style";
+	color: yellow;
+	margin-top: 180px;
+}
+.foot{
+	width: 100%;
+	height: :;00px;
+	position: absolute;
+	z-index: -999;
+	margin-top: 700px;
+	background-color: black;
+}
+.foot-w{
+	width: 1500px;
+	height: 400px;
+	margin: 0 auto;
+}
+.fot-one{
+	height: 180px;
+	width: 700px;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 30px;
+}
+.fot-one img{
+	height: 90px;
+	width: 90px;
+	margin-left: 120px;
+	cursor: pointer;
+}
+.fot-two{
+	height: 50px;
+	width: 450px;
+	margin: 0 auto;
+	display: flex;
+}
+.fot-two input{
+	height: 50px;
+	width: 380px;
+	text-align: center;
+	font-size: 20px;
+	border: 1px solid yellow;
+	outline-style: none;
+	border-radius: 10px 0 0 10px;
+	font-family: "palatino linotype";
+	color: yellow;
+	background-color: #000000;
+	margin-left: 50px;
+}
+.fot-two button{
+	height: 52px;
+	width: 80px;
+	font-size: 20px;
+	outline-style: none;
+	border: 0;
+	border-radius: 0 10px 10px 0;
+	background-color: black;
+	color: yellow;
+	border: 1px solid yellow;
+	cursor: pointer;
+}
+.fot-there{
+	height: 20px;
+	width: 550px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+.fot-there p{
+	text-align: center;
+	color: white;
+	font-family: "bodoni mt";
+}

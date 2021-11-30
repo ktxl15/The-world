@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>TOP网</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+	<body>
+		<div class="loogmask"></div>
+		<div class="looganim">
+			<div class="loogyuan"></div>
+			<div class="loogyuan1"></div>
+			<div class="loogyuan2"></div>
+		</div>
+		<!-- 加载动画 -->
+		<div class="navimask">
+		<div class="navi">
+			<div class="navileft"><img src="img/logo.jpg" class="logo"></div>
+			<ul class="naviul">
+				<li class="navili">Home</li>
+				<li class="navili">Content</li>
+				<li class="navili">Aboutme</li>
+				<li class="navili">End</li>
+			</ul>
+		</div>
+		</div>
+		<div class="home">
+			<div class="hometext">No body ueser play for me……</div>
+		</div>
+		<div class="choose">
+			<div class="choose-w">
+				<div class="choosetext">The content so The time……</div>
+				<div class="chooseimge">
+					<ul class="chul">
+						<div class="box"><li class="chli ch"></li></div>
+						<li class="boxtext">This is blue</li>
+						<div class="box1"><li class="chli1 ch"></li></div>
+						<li class="boxtext1">This is green</li>
+						<div class="box2"><li class="chli2 ch"></li></div>
+						<li class="boxtext2">This is pink</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="jiaohu">
+			<div class="jiaotext">THIS IS OUT THE FISHIN'S CUR</div>
+			<button type="button" class="btn">This is my like color</button>
+		</div>
+			<div class="jiaomask"></div>
+			<div class="masktnt">
+				<div class="c">
+				<div class="cha"></div>
+				<div class="cha1"></div>
+				</div>
+				<div class="mtext">We are professional manufacturer</div>
+			</div>
+			<div class="lunhuanimg">
+				<div class="luntext">We will taibot for your clother</div>
+				<div class="lun-w">
+					<ul class="lunul">
+						<li class="lunli"><img src="img/秋.png" ></li>
+						<li class="lunli"><img src="img/al.png" ></li>
+						<li class="lunli"><img src="img/antiun.png" ></li>
+					</ul>
+				</div>
+				<div class="lunleft"></div>
+				<div class="lunright"></div>
+			</div>
+			
+			<div class="foot">
+				<div class="foot-w">
+					<div class="fot-one">
+						<a href=""><img src="img/github-fill.png" ></a>
+						<a href=""><img src="img/instagram.png" ></a>
+						<a href=""><img src="img/邮箱.png" ></a>
+					</div>
+					<div class="fot-two">
+						<input type="text" placeholder="Enter your Email">
+						<button type="button">Search</button>
+					</div>
+					<div class="fot-there">
+						<p>Copyright © 2021.Company name All jojo ktxl's name.</p>
+					</div>
+				</div>
+			</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setInterval(function(){
+				$('.loogmask').css({'display':'none'})
+				$('.looganim').css({'display':'none'})
+			},2500)
+		$('.hometext').hover(function(){
+			$('.hometext').css({'right':'80px','opacity':'.7'})
+		},function(){
+			$('.hometext').css({'right':'0px','opacity':'1'})
+		})
+		$('.box').hover(function(){
+			$('.boxtext').css({'margin-top':'0px','opacity':'1'})
+		},function(){
+			$('.boxtext').css({'margin-top':'100px','opacity':'0'})
+		})
+		
+		$('.box1').hover(function(){
+			$('.boxtext1').css({'margin-top':'650px','opacity':'1'})
+		},function(){
+			$('.boxtext1').css({'margin-top':'500px','opacity':'0'})
+		})
+		
+		$('.box2').hover(function(){
+			$('.boxtext2').css({'margin-top':'0px','opacity':'1'})
+		},function(){
+			$('.boxtext2').css({'margin-top':'100px','opacity':'0'})
+		})
+		$('.btn').click(function(){
+			$('.jiaomask').css({'display':'block'})
+			$('.masktnt').css({'display':'block'})
+		})
+		$('.c').click(function(){
+			$('.jiaomask').css({'display':'none'})
+			$('.masktnt').css({'display':'none'})
+		})
+		var index=0
+		$('.lunleft').click(function(){
+			index--;
+			if(index<0){
+				index=2
+			}
+			$('.lunul').css({'margin-left':index*-500+'px'})
+			console.log(index)
+		})
+		$('.lunright').click(function(){
+			index++;
+			if(index>2){
+				index=0
+			}
+			$('.lunul').css({'margin-left':index*-500+'px'})
+			console.log(index)
+		})
+		$('.lunhuanimg').hover(function(){
+			$('.lunleft').css('opacity','1')
+			$('.lunright').css('opacity','1')
+		},function(){
+			$('.lunleft').css('opacity','0')
+			$('.lunright').css('opacity','0')
+		})
+		$(window).scroll(function(){
+			var top = $(window).scrollTop()
+			var hei  = $('.navi').height()
+			if(top>hei){
+				$('.navi').addClass('addnavi')
+			}else{
+				$('.navi').removeClass('addnavi')
+			}
+		})
+			$('.navili').click(function(){
+				cover = $(this).index()
+				var top = cover*900
+				$('.navili').eq(cover).css({'background-color':'yellow','color':'black'}).siblings().css({'background-color':'black','color':'white'})
+				$("html,body").animate({scrollTop:top},800)
+			})
+			
+			
+	})
+	</script>
+</html>
